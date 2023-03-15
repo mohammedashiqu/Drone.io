@@ -10,7 +10,7 @@ steps:
 - name: build
   image: golang:1.13
   commands:
-    - "go build -o ./myapp"
+    - "docker build -t kuttapi ."
 
 - name: publish  
   image: plugins/docker
